@@ -32,6 +32,9 @@
     <link rel="stylesheet" href="./style.css">
     <script type="module">document.addEventListener("DOMContentLoaded", function () { document.getElementById("astronav-menu").addEventListener("click", () => { [...document.querySelectorAll(".astronav-toggle")].forEach(e => { e.classList.toggle("hidden") }) }); const o = document.querySelectorAll(".astronav-dropdown"); o.forEach(e => { const r = e.querySelector("button"); r.addEventListener("click", n => { e.classList.toggle("open"), e.setAttribute("aria-expanded", e.getAttribute("aria-expanded") === "true" ? "false" : "true"), e.hasAttribute("open") ? e.removeAttribute("open") : e.setAttribute("open", ""), r.nextElementSibling.classList.toggle("hidden"), Array.from(o).filter(t => t !== e).forEach(t => { t.classList.remove("open"), t.removeAttribute("open"), t.setAttribute("aria-expanded", "false"), t.querySelector(".dropdown-toggle").classList.add("hidden") }), n.stopPropagation() }) }), document.addEventListener("click", () => { o.forEach(e => { e.classList.remove("open"), e.removeAttribute("open"), e.setAttribute("aria-expanded", "false") }), document.querySelectorAll(".dropdown-toggle").forEach(e => e.classList.add("hidden")) }) });
     </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-860964385"></script>
+    <script> window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'AW-860964385'); </script>
 </head>
 
 <body data-new-gr-c-s-check-loaded="14.1113.0" data-gr-ext-installed="" cz-shortcut-listen="true">
@@ -297,14 +300,15 @@
         </p>
     </div>
     <footer class="my-20">
-        <p class="text-center text-sm text-slate-500">Copyright © 2023 INR500 | <a href="https://INR500.com/tc_privacy.html">Terms & Conditions</a> | All rights reserved.<br></p>
+        <p class="text-center text-sm text-slate-500">Copyright © 2023 INR500 | <a
+                href="https://INR500.com/tc_privacy.html">Terms & Conditions</a> | All rights reserved.<br></p>
         <!--
     Can we ask you a favor 🙏
     Please keep this backlink on your website if possible.
     or Purchase a commercial license from https://INR500.com
     -->
         <p class="text-center text-xs text-slate-500 mt-1">Made with ♥<br></p>
-      </footer>
+    </footer>
 </body>
 
 </html>
